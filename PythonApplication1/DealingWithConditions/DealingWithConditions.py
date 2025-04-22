@@ -48,7 +48,9 @@
 # print(Dirty_food[1][1])
 
 # small apps for rock paper scissors 
-import random
+
+from tokenize import String
+
 
 
 # print("choice sccers choice 1 , peper choice 2 , Rock choice 3")
@@ -73,7 +75,75 @@ import random
 #     print("\n\nComputer win")
 
 
+# using loop starting with for loop 
+# Fruits = ["Appel" , "Bananen" , "Orange" , "Grops"]
+# Fruit_like =[]
 
+# for fruit in Fruits :
+#     if fruit == "Appel" or fruit == "Orange":
+#         Fruit_like.append(fruit)
+#     print(fruit)
+
+# print("This is the list of all the fruits")
+# print("The fruit that i like it is ")
+# for Like_Fruit in Fruit_like:
+#    (len(Fruits))
+# print(Fruits[3 print(Like_Fruit)
+# print])
+
+# Names = ["Ibrahim" , "Sadik" , "Alnagar"]
+# Reverse_Names = []
+# lenght_Name = len(Names)
+
+
+# for Name in Names:
+#        lenght_Name -= 1
+#        Reverse_Names.append(Names[lenght_Name])
+       
+# print(Reverse_Names)
+
+
+myScores = [12 ,343,55,667,444,55,23,57,12,12]
+currentNum =0
+
+# def getMaxNumber(Max , currentNum):
+#     if Max > currentNum:
+#         currentNum = Max
+#         return Max
+#     return currentNum
+
+# for Max in myScores :
+#   currentNum = getMaxNumber(Max , currentNum)
+ 
+# print(max) 
+
+# practice about dic
+
+car = {"Brand" : "toyota" , "model" : "corolla" , "Year" : 2020}
+print(car)
+
+car["Year"] = 2024
+print(car)
+car["Colour"] = "Blue"; 
+print(car)
+
+# num_List =[1,3,4,5,2,1]
+
+# dic_23 = {}
+# dic_23[num_List[0]] = 2;
+# print(dic_23)
+name = "Ibrahim"
+Count_deplocate = 0; 
+variable_deplocate = "";
+dic_deplocate = {}
+
+
+for i in name : 
+    for j in name : 
+        if i == j :
+            variable_deplocate = i ; 
+            Count_deplocate = j;
+    dic_deplocate = {variable_deplocate , Count_deplocate}
 
 
 

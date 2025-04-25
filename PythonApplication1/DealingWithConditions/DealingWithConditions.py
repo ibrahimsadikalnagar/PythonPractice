@@ -49,6 +49,7 @@
 
 # small apps for rock paper scissors 
 
+from queue import Full
 from tokenize import String
 
 
@@ -119,32 +120,44 @@ currentNum =0
 
 # practice about dic
 
-car = {"Brand" : "toyota" , "model" : "corolla" , "Year" : 2020}
-print(car)
+# car = {"Brand" : "toyota" , "model" : "corolla" , "Year" : 2020}
+# print(car)
 
-car["Year"] = 2024
-print(car)
-car["Colour"] = "Blue"; 
-print(car)
+# car["Year"] = 2024
+# print(car)
+# car["Colour"] = "Blue"; 
+# print(car)
 
 # num_List =[1,3,4,5,2,1]
 
 # dic_23 = {}
 # dic_23[num_List[0]] = 2;
 # print(dic_23)
-name = "Ibrahim"
-Count_deplocate = 0; 
-variable_deplocate = "";
-dic_deplocate = {}
+# name = "Ibrahim"
+# Count_deplocate = 0; 
+# variable_deplocate = "";
+# dic_deplocate = {}
 
 
-for i in name : 
-    for j in name : 
-        if i == j :
-            variable_deplocate = i ; 
-            Count_deplocate = j;
-    dic_deplocate = {variable_deplocate , Count_deplocate}
+# for i in name : 
+#     for j in name : 
+#         if i == j :
+#             variable_deplocate = i ; 
+#             Count_deplocate = j;
+#     dic_deplocate = {variable_deplocate , Count_deplocate}
 
+fullName = "ibrahim"
+checkIfRepeat = False
+lenghtString = len(fullName)
 
+print = fullName[1]
+
+for i in range(0, lenghtString) :
+    for j in range(1, lenghtString):
+        if fullName[i] == fullName[j] :
+            print(f"there is a deplucate {j}" )
+        
+print("Sayad")
+    
 
 

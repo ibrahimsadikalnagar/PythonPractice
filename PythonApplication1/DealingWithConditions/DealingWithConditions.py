@@ -49,8 +49,10 @@
 
 # small apps for rock paper scissors 
 
+from ast import Num
 from queue import Full
 from tokenize import String
+from typing import Type
 
 
 
@@ -104,8 +106,8 @@ from tokenize import String
 # print(Reverse_Names)
 
 
-myScores = [12 ,343,55,667,444,55,23,57,12,12]
-currentNum =0
+# myScores = [12 ,343,55,667,444,55,23,57,12,12]
+# currentNum =0
 
 # def getMaxNumber(Max , currentNum):
 #     if Max > currentNum:
@@ -146,18 +148,178 @@ currentNum =0
 #             Count_deplocate = j;
 #     dic_deplocate = {variable_deplocate , Count_deplocate}
 
-fullName = "ibrahim"
-checkIfRepeat = False
-lenghtString = len(fullName)
+# Number = 100 
 
-print = fullName[1]
+# for Number in range(1,11):
+#     print(Number)
 
-for i in range(0, lenghtString) :
-    for j in range(1, lenghtString):
-        if fullName[i] == fullName[j] :
-            print(f"there is a deplucate {j}" )
-        
-print("Sayad")
+
+# print("Hello World")
+
+# numbersOfTimesToUseCalc = 0 
+
+# numbersOfTimesToUseCalc = int(input("Enter How many numbers do you want to use the calclation ")); 
+
+# while numbersOfTimesToUseCalc != 0 :
+#     num1 = int(input("Enter the first number ")); 
+#     num2 = int(input("Enter the second number  ")); 
+
+#     synbol = input("Enter what type of calculation you want ");
+
+#     if synbol == "+" or synbol == "-" or synbol == "/" or synbol == "*":
+#         if synbol == "+":
+#            print(f"Result is  {num1 + num2}")
+#         elif synbol == "-":
+#             print(f"Result of substract is {num1 - num2}");
+#         elif synbol == "/":
+#             print(f"Result of divion is {num1 / num2}"); 
+#         elif synbol == "*":
+#             print(f"Result of multiplcation is {num1 * num2}"); 
+#     else:
+   
+#         inputStringAllow = str(input("Do you want to enter again numbers press yes if no it will give you the reminder by privous input "))
+#         if inputStringAllow == "yes":
+#              print("Know we will check about the reminder of moduler ")
+#              number1 = int(input("Enter the first check number"))
+#              number2 = int(input("Enter the Second check number"))
+
+#              if number1 % number2 == 0 : 
+#                     print("the Result have reminder ")
+#              else: 
+#                     print("the Result have no reminder ")
+#         elif inputStringAllow != "Yes":
+#              if num1 % num2 == 0 : 
+#                  print("the Result have reminder ")
+#              else: 
+#                     print("the Result have no reminder ")
+#     numbersOfTimesToUseCalc -=  1
+
+
+# print("Hello World")
+
+# def add(x, y):
+#     return x + y
+
+# def sub(x, y):
+#     return x - y
+
+# def multi(x, y):
+#     return x * y
+
+# def divide(x, y):
+#     return x / y
+
+
+# operations = {
+#     '+': lambda num1, num2: num1 + num2,
+#     '-': lambda num1 , num2: num1 - num2,
+#     '*': lambda num1 , num2 : num1 * num2,
+#     '/': lambda num1 , num2 : num1 / num2,
+# }
+
+# numbersOfTimesToUseCalc = int(input("Enter how many numbers you want to use the calculation: "))
+
+# while numbersOfTimesToUseCalc != 0:
+#     num1 = int(input("Enter the first number: "))
+#     num2 = int(input("Enter the second number: "))
+
+#     symbol = input("Enter the type of calculation you want (+, -, *, /): ")
+
+#     if symbol in operations:
+#         result = operations[symbol](num1, num2)
+#         print(f"Result is {result}")
+#     else:
+#         inputStringAllow = input("Invalid symbol! Do you want to enter numbers again? (yes/no): ").lower()
+
+#         if inputStringAllow == "yes":
+#             print("Now we will check about the remainder (modulus)")
+#             number1 = int(input("Enter the first check number: "))
+#             number2 = int(input("Enter the second check number: "))
+
+#             if number1 % number2 == 0:
+#                 print("The result has no remainder.")
+#             else:
+#                 print("The result has a remainder.")
+#         else:
+#             if num1 % num2 == 0:
+#                 print("The result has no remainder.")
+#             else:
+#                 print("The result has a remainder.")
+
+#     numbersOfTimesToUseCalc -= 1
+
+
+# for number in range(1,101): 
+#     if number % 3 == 0 :
+#         print("Fizz")
+#     elif number % 5 == 0 :
+#         print("Buzz")
+#     elif number % 3 == 0 and number % 5 == 0 : 
+#                 print("FizzBuzz")
+#     else :
+#         print(number)
+
+# n = 3
+
+# if n % 2 == 0 and 2 <= n <= 5:
+#     print("Not Weird")
+# elif n % 2 == 0 and 6 <= n <= 20: 
+#     print("Weird")
+
+# elif n % 2 == 0 and n > 20:
+#     print("Not Weird")
+# elif n % 2 != 0 : 
+#     print("Weird")
+
+
+# a = int(input())
+# b = int(input())
+# print(a+b)
+# print(a-b)
+# print(a*b)
+      
+# a  = int(input())
+# b  = int(input())
+# print(int(a / b))
+# print(float(a / b))
+
+# def Is_Leap(year):
+#     if (year % 4 == 0 ) and (year % 100 != 0 ) or ( year % 400 == 0):
+#       return True
+#     else: 
+#         return False 
+# year = int(input())
+# print(Is_Leap(year))
+  
+
+# def is_leap(year):
+#     leap = False
     
+#     if (year % 4 == 0 ) and (year % 100 != 0 ) or ( year % 400 == 0):
+#      return True
+#     else: 
+#      return False 
+    
+#     return leap
+
+# year = int(input())
+# print(is_leap(year))
+
+# n = int(input())
+# result = ""
+# for i in range(1, n +1):
+#     result += str(i)
+# print(result)
+n = int(input())  # number of scores
+scores = list(map(int, input().split()))  # read scores as a list of ints
+
+unique_scores = set(scores)  # remove duplicates
+
+unique_scores.remove(max(unique_scores))  # remove the highest score
+
+runner_up = max(unique_scores)  # max of remaining is runner-up
+
+print(runner_up)
+print(scores)
 
 

@@ -310,16 +310,142 @@ from typing import Type
 # for i in range(1, n +1):
 #     result += str(i)
 # print(result)
-n = int(input())  # number of scores
-scores = list(map(int, input().split()))  # read scores as a list of ints
 
-unique_scores = set(scores)  # remove duplicates
+# n = int(input())  # number of scores
+# scores = list(map(int, input().split()))  # read scores as a list of ints
 
-unique_scores.remove(max(unique_scores))  # remove the highest score
+# unique_scores = set(scores)  # remove duplicates
 
-runner_up = max(unique_scores)  # max of remaining is runner-up
+# unique_scores.remove(max(unique_scores))  # remove the highest score
 
-print(runner_up)
-print(scores)
+# runner_up = max(unique_scores)  # max of remaining is runner-up
+
+# print(runner_up)
+# print(scores)
+
+# to create list 
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# n = int(input())
+
+# result = [[i , j , k ] 
+#           for i in range(x + 1)
+#           for j in range(j + 1)
+#           for k in range(k + 1)
+#           if i + j + k != n ]
+# print(result)
+# n = int(input())  
+# scores = list(map(int, input().split())) 
+
+# unique_scores = set(scores) 
+# unique_scores.remove(max(unique_scores)) 
+
+# runner_up = max(unique_scores) 
+
+# print(runner_up)
+# print(scores)
+
+# creating dictionary 
+# student = {}
+# student["Ibrahim"] = [85 , 343 , 444]
+# student["Ismail"] = [90 , 455, 566]
+# student["Ishrak"] = [94 , 33 , 335]
+
+# TotalResult = student["Ibrahim"]
+
+# avarage = sum(TotalResult) / len(TotalResult)
+
+# print(f"Alice's average is: {avarage:.2f}")
+
+# myList = []
+# myList.append(3)
+# myList.append(8)
+# myList.insert(1,5)
+# myList.remove(3)
+# print(myList)
+# myList.reverse()
+# print(myList)
+
+# num2 = ["1" , "2" , "3"]
+# print(num2)
+
+# print("convert the num2 to integer using map")
+# convN = list(map(int , num2))
+# print(convN)
+
+# if __name__ == '__main__':
+#     N = int(input())
+#     my_list = []
+#     for _ in range(N):
+#         command = input("Enter command: ").split()
+#         cmd = command[0]
+#         args = command[1:]
+
+#         if cmd == 'insert':
+#             i, e = map(int, args)
+#             my_list.insert(i, e)
+#             print(f"Inserted {e} at position {i}: {my_list}")
+#         elif cmd == 'print':
+#             print(f"Current list: {my_list}")
+#         elif cmd == 'remove':
+#             e = int(args[0])
+#             my_list.remove(e)
+#             print(f"Removed first occurrence of {e}: {my_list}")
+#         elif cmd == 'append':
+#             e = int(args[0])
+#             my_list.append(e)
+#             print(f"Appended {e} to the end: {my_list}")
+#         elif cmd == 'sort':
+#             my_list.sort()
+#             print(f"Sorted list: {my_list}")
+#         elif cmd == 'pop':
+#             popped = my_list.pop()
+#             print(f"Popped last element {popped}: {my_list}")
+#         elif cmd == 'reverse':
+#             my_list.reverse()
+#             print(f"Reversed list: {my_list}")
+
+# Today i will start with tuple , set , list
+
+# TryTuple = (1, 2)
+# print(hash(TryTuple))
+
+# if __name__ == '__main__':
+#     n = int(input())
+#     integer_list = map(int, input().split())
+#     t = tuple(integer_list)
+#     print(hash(t))
+
+# i want to change the letter inside the string 
+
+# word = "Hello"
+# position = 0
+# NewLetter = "Y"
+
+# NewWord = NewLetter + word[position+1:]
+# print(NewWord)
+
+# check of the string contain alphabit 
+# s = input()
+# checkInput = s.isalnum()
+# # print(checkInput)
+
+# words = []
+# for _ in range(3):
+#     word = input()
+#     words.append(word)
+# print("-----------")
+
+# for _ in range(len(words)):
+#     print(words[_])
+
+# to do password generator
+import random
+
+mylistString = ["ibrahim" , "Sadik " , "alnagar"]
+mylistInteger = [1, 2 ,4, 5,6,7,8,9,10]
 
 
+RondomChoose = random.choice(mylistString)+ str( random.choice(mylistInteger))
+print(RondomChoose)

@@ -443,9 +443,70 @@ from typing import Type
 # to do password generator
 import random
 
-mylistString = ["ibrahim" , "Sadik " , "alnagar"]
-mylistInteger = [1, 2 ,4, 5,6,7,8,9,10]
+# mylistString = ["ibrahim" , "Sadik " , "alnagar"]
+# mylistInteger = [1, 2 ,4, 5,6,7,8,9,10]
 
 
-RondomChoose = random.choice(mylistString)+ str( random.choice(mylistInteger))
-print(RondomChoose)
+# RondomChoose = random.choice(mylistString)+ str( random.choice(mylistInteger))
+# print(RondomChoose)
+
+# letters = ['a' , 'b' , 'c' ,'d' ,'e' , 'f' , 'g' ,'h' ,'i' ,'g' ,'k']
+# numbers = ['0' , '1' , '2' , '3' , '4' , '5']
+# synbol = ['!' , '#' , '$' , '%']
+
+# print("welcome in the password generator"); 
+
+# nr_letter = int(input("How many letters do you want to generate "))
+# nr_synbol = int(input("How many synbol do you want to generate "))
+# nr_Numbers = int(input("How many numbers do you want to generate "))
+
+# password = ""; 
+# for char in range(nr_letter): 
+#     password += random.choice(letters)
+    
+# for char in range(nr_synbol): 
+#     password += random.choice(numbers)
+
+# for char in range(nr_Numbers):
+#     password += random.choice(synbol)
+
+# password_list = list(password)
+# MixPassword = ""
+# for char in range(len(password)):
+#     MixPassword += random.choice(password_list)
+
+# # print(MixPassword)
+
+# # Replace all ______ with rjust, ljust or center.
+
+# thickness = int(input())  # Must be an odd number
+# c = 'H'
+
+# # Top Cone
+# for i in range(thickness):
+#     print((c * i).rjust(thickness - 1) + c + (c * i).ljust(thickness - 1))
+
+# # Top Pillars
+# for i in range(thickness + 1):
+#     print((c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6))
+
+# # Middle Belt
+# for i in range((thickness + 1) // 2):
+#     print((c * thickness * 5).center(thickness * 6))
+
+# # Bottom Pillars
+# for i in range(thickness + 1):
+#     print((c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6))
+
+# # Bottom Cone
+# for i in range(thickness):
+#     print(((c * (thickness - i - 1)).rjust(thickness) + c + (c * (thickness - i - 1)).ljust(thickness)).rjust(thickness * 6))
+
+name = "ibrahim"
+devName = name[:4]
+inputDev = 3
+
+for i in range(len(name)):
+    
+
+  print(devName)

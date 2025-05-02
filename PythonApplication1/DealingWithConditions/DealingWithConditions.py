@@ -508,5 +508,6 @@ inputDev = 3
 
 for i in range(len(name)):
     
-
   print(devName)
+
+
